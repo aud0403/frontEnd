@@ -1,0 +1,43 @@
+caption{
+    text-align: center;
+    margin:auto;
+}
+table{
+    height: 300px;
+    width: 600px;
+    margin:auto;
+    border-collapse: collapse;
+    text-align: center;
+}
+td{
+    border: 1px solid violet;
+    width:100px;
+}
+th{
+    border:2px solid violet;
+    width:100px;
+}
+.project{
+    color: antiquewhite;
+    background-color:brown;
+}
+.on{
+    color: blue;
+    background-color:aquamarine;
+}
+.java{
+    color: coral;
+    background-color: cornsilk;
+}
+.free{
+    color: darkmagenta;
+    background-color: ghostwhite;
+}
+.re{
+    color: crimson;
+    background-color: lightsalmon;
+}
+.part{
+ color: white;
+ background-color: black;
+}
