@@ -1,0 +1,33 @@
+td{
+    border: 1px solid #90caf9 ;
+    
+    color: #003c8f;
+    width: 300px;
+    text-align: center;
+    border-radius: 5px ;
+}
+table{
+    margin: auto;
+    
+}
+button{
+    width: 50%;
+    font-size: large;
+    background-color: #90caf9;
+    text-align: center;
+    color: #003c8f;
+   border: none;
+    border-radius: 5px ;
+    
+}
+th{
+    background-color: #90caf9;
+    text-align: left;
+    border-radius: 5px ;
+    color: #003c8f;
+    font-size: 1.2em;
+    
+}
+div{
+    text-align: center;
+}
