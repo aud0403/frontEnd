@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h2>What Can javascript Do?</h2>
+    <p>JavaScript can change HTML attribute values.</p>
+    <p>In this case JavaScript changes the value of the src(source) attribute of an image.</p>
+    <p>HTML 태그의 style값 변경하기 :em 태그의 테긋트 스타일 color 값을 변경하는 예제입니다.</p>
+    <p> 전구를 클릭해 보세요. 상태 <em id="state" style="color: green;">ON</em></p>
+
+    <button onclick="document.getElementById('bul').src='../images/pic_bulbon.gif'">전구를 킨다</button>
+    <img id='bul'src="../images/pic_bulboff.gif" style="width: 100px;">
+    <button onclick="document.getElementById('bul').src='../images/pic_bulboff.gif'">전구를끈다</button>
+<br>
+
+    <button onclick="bulbon()">전구를 킨다</button>
+    <img id='bul2'src="../images/pic_bulbon.gif" style="width: 100px; cursor: pointer;"
+                onclick="bulbToggle()">
+                
+    <button onclick="bulboff()">전구를끈다</button>
+
+    <script>
+        const img= document.getElementById('bul2')
+        const onoff=  document.getElementById('state')
+        let state =1; //전역변수입니다. 1이면 on, 0이면 off
+        function bulbToggle(){
+            if(state==1){
+                bulboff();
+                state=0;
+            }else{  //현재 0입니다
+                bulbon();
+                state=1;
+            }
+        }
+        function bulbon(){
+           img.src="../images/pic_bulbon.gif"
+            onoff.style.color='green'
+            onoff.innerHTML='ON'
+        }
+        function bulboff(){
+           img.src="../images/pic_bulboff.gif"
+           onoff.style.color='red'
+           onoff.innerHTML='OFF'
+        }
+    </script>
+
+</body>
+</html>
