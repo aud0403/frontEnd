@@ -5,7 +5,7 @@ a{
 }
 .container > li{
     /* border: 1px solid yellow; */
-    list-style: none;
+    list-style: none; /*  앞에 있는 동그라미 지운다 */
     font-size: 1.5em;
     padding: 8px 12px;
     margin: 8px 12px;
@@ -33,17 +33,16 @@ a{
     }
 }
 /* 마진과 마진이 만났을때 마진 상쇄경우 */
-html.body{
+html,body{
     height: 100%;
 }
-.map-wrap{
+.map_wrap{
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 .footer{
     border-top:3px solid tomato;
-    font-size: 0.8 em;
 }
 .footer a,p{
     font-size: 12px;

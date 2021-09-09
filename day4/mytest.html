@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>mytest#1</title>
+    <!-- 스크립트 script 작성 할수 있는위치1 -->
+</head>
+<body>
+     <!-- 스크립트 script 작성 할수 있는위치2 -->
+    <!-- 스크립트는 html 이벤트 리스터 속성에 작성할 수 있다. -->
+    <!-- 자바스크립트에서 사용하는 문서 객체 : documnet로 현재 보이는 웹문서의 요소들에 접근한다.
+        자바스크립트에서 사용하는 브라우저 객체:window 로 현재 실행중인 브라우저 제어한다.-->
+        <!-- onclick이벤트 속성 값"" 안에 자바스크립트 명령을 작성합니다. -->
+        <button onclick="document.getElementById('demo').innerHTML=Date()">
+            현재 날짜와 시간을 알려줄께요</button>
+        <!-- Date()는 함수입니다. -->
+        <p id ="demo">innerHTML 위치입니다.</p>
+        <p id ="demo2">잘봐 내용 이 바뀐다.</p>
+        <button onclick="document.getElementById('demo2').innerHTML='신기하지?'">여길 눌러봐</button>
+
+        <p id ="demo3"></p>
+        <SCRipt>
+            var x=5,y=7, sum=x+y;
+            document.getElementById('demo3').innerHTML=x+'더하기'+y+ '는'+sum+'이야';
+        </SCRipt>
+
+    <p id ="demo4">여기 사과 12개가 있어</p>
+    <button onclick="document.getElementById('demo4').innerHTML='사과 7개가 남지'">거기서 사과 5개를 먹으면?</button>
+
+    
+
+    <script>
+        var  x=9,y=10, sum=x+y;
+    </script>
+    <p id ="demo5">정답은?</p>
+    <button onclick="document.getElementById('demo5').innerHTML=sum">x+y</button>    
+    <script>
+        let  x=5,y=17, sum=x+y;
+    </script>
+    <p id ="demo6">정답은?</p>
+    <button onclick="document.getElementById('demo6').innerHTML=sum">x+y</button>   
+
+</body>
+</html>
